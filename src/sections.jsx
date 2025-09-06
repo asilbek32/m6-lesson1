@@ -2,7 +2,7 @@ import konino from "./assets//konino.png";
 
 const Sections = () => {
   return (
-    <section className="px-[130px]">
+    <section className="px-[130px] max-w-[1440px] mx-auto px-4 py-6">
       <div className="!p-4 flex justify-between items-center mb-5">
         <h2 className="text-[#303030] text-[42px]">Акции</h2>
         <a className="text-[#46C578] hover:underline" href="#">

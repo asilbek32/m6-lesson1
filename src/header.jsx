@@ -4,7 +4,7 @@ import search from "./assets/Search.png";
 
 function Header() {
   return (
-    <div>
+    <div className="max-w-[1440px] mx-auto px-4 py-6">
       <div className="px-[130px] flex  items-center justify-between h-[80px] mb-[50px]">
         <div className="flex gap-6 items-center ">
           <img src={logo} alt="" className="w-[99px]" />
