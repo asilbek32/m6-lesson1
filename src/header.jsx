@@ -1,33 +1,58 @@
 import React from "react";
 import logo from "./assets/com.png";
-import search from "./assets/Search.png";
+
 
 function Header() {
   return (
     <div className="max-w-[1440px] mx-auto px-4 py-6">
-      <div className="px-[130px] flex  items-center justify-between h-[80px] mb-[50px]">
-        <div className="flex gap-6 items-center ">
-          <img src={logo} alt="" className="w-[99px]" />
-          <div className="flex flex-col gap-1">
-            <p className="text-[#A7AED2]">Бесплатный звонок</p>
-            <p>8 800 080 5011</p>
+      <header className="border-b border-gray-200 shadow-sm bg-white">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="" className="h-8" />
+            <div className="hidden sm:block text-sm text-gray-500">
+              Бесплатный звонок <br />
+              <span className="text-black font-semibold">8 800 080 5011</span>
+            </div>
+          </div>
+
+          <div className="flex-1 max-w-lg mx-4">
+            <input
+              type="text"
+              placeholder="Поиск товаров"
+              className="w-full rounded-full border border-gray-200 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+          </div>
+
+          <div className="flex items-center gap-4">
+            <div className="hidden sm:block text-sm text-gray-500">
+              <span className="text-green-600">ЕЦ-166/4</span>
+              <br />
+              Нур-Султан
+            </div>
+            <button className="px-4 py-1 border rounded-full text-sm hover:bg-gray-100">
+              Войти
+            </button>
           </div>
         </div>
-        <div className="flex justify-center gap-1 bg-[#F4F5FA] text-[#A7AED2] rounded-xl py-[14px] w-[300px]">
-          <img src={search} alt="" />
-          Поиск товаров
-        </div>
-        <div className="flex  gap-5 items-center">
-          <div className="flex flex-col ">
-            <p className="text-[#46C578]">ЕЦ-166/4</p>
-            <p>Нур-Султан</p>
+
+        <nav className="border-t border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 flex justify-between font-bold gap-6 py-2 text-sm text-gray-700">
+            <div className="cursor-pointer">Продукты</div>
+            <div className="cursor-pointer">Еда быстрого приготовления</div>
+            <div className="cursor-pointer">Консервы</div>
+            <div className="cursor-pointer">Напитки</div>
+            <div className="cursor-pointer">Бытовая химия</div>
+            <div className="cursor-pointer">Уход за собой</div>
+            <div className="cursor-pointer text-green-600">Еще</div>
+            <button className="flex items-center gap-2 bg-green-500 text-white px-3 py-1 rounded-lg">
+              <span>Корзина</span>
+              <span className="bg-white text-green-600 font-bold px-2 py-0.5 rounded-full text-xs">
+                12
+              </span>
+            </button>
           </div>
-          <div className="border-1 border-solid border-[#C0C2CB] px-[19px] py-[8px] rounded-4xl">
-            Войти
-          </div>
-        </div>
-        
-      </div>
+        </nav>
+      </header>
     </div>
   );
 }
