@@ -1,0 +1,5 @@
+.scrol_hidden{
+    overflow: auto;
+    scrollbar-width: none;         /* Firefox uchun */
+    -ms-overflow-style: none;
+  }

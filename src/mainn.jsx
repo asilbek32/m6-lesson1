@@ -5,7 +5,7 @@ import ffff from "./assets/ffff.png";
 import ccc from "./assets/ccc.png";
 const Mainn = () => {
   return (
-    <section className="px-[130px] max-w-[1440px] mx-auto px-4 py-6">
+    <section className="xl:px-[130px] max-w-[1440px] mx-auto px-4 py-6">
       <div className="grid grid-cols-1 rounded-lg md:grid-cols-3">
         <div className="bg-[#46C578] !p-6 md:col-span-1 rounded-lg">
           <h1 className="text-[#FFFFFF] text-[32px] !py-5">

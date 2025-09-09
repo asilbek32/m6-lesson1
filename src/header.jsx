@@ -4,7 +4,7 @@ import logo from "./assets/com.png";
 
 function Header() {
   return (
-    <div className="max-w-[1440px] mx-auto px-4 py-6">
+    <div className="max-w-[1440px] mx-auto xl:px-[130px] px-4 py-6">
       <header className="border-b border-gray-200 shadow-sm bg-white">
         <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
           <div className="flex items-center gap-3">
