@@ -6,8 +6,8 @@ import ccc from "./assets/ccc.png";
 const Mainn = () => {
   return (
     <section className="xl:px-[130px] max-w-[1440px] mx-auto px-4 py-6">
-      <div className="grid grid-cols-1 rounded-lg md:grid-cols-3">
-        <div className="bg-[#46C578] !p-6 md:col-span-1 rounded-lg">
+      <div className="grid grid-cols-2 md:grid-cols-3 mb-[20px] h-auto">
+        <div className="bg-[#46C578] md:col-span-1 rounded-l-lg py-[50px] px-[35px]">
           <h1 className="text-[#FFFFFF] text-[32px] !py-5">
             Всегда свежие молочные продукты
           </h1>
@@ -18,12 +18,12 @@ const Mainn = () => {
             Подробнее
           </button>
         </div>
-        <div className="bg-[#DEDEDE] flex items-center justify-center w-full md:col-span-2 rounded-lg">
+        <div className="bg-[#DEDEDE] flex items-center justify-center w-full md:col-span-2 rounded-r-lg">
           <img src={car} alt="" />
         </div>
       </div>
 
-      <div className="!py-4 gap-3 grid grid-cols-1 md:grid-cols-4">
+      <div className=" gap-3 grid grid-cols-4">
         <div className="bg-[#FA6A6A] flex flex-col justify-between items-center rounded-lg !p-2">
           <img src={pppp} alt="" />
           <div>

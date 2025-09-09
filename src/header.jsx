@@ -5,8 +5,8 @@ import logo from "./assets/com.png";
 function Header() {
   return (
     <div className="max-w-[1440px] mx-auto xl:px-[130px] px-4 py-6">
-      <header className="border-b border-gray-200 shadow-sm bg-white">
-        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+      <header>
+        <div className="px-4 py-2 flex items-center justify-between md:mb-[25px]">
           <div className="flex items-center gap-3">
             <img src={logo} alt="" className="h-8" />
             <div className="hidden sm:block text-sm text-gray-500">
@@ -35,8 +35,8 @@ function Header() {
           </div>
         </div>
 
-        <nav className="border-t border-gray-100">
-          <div className="max-w-7xl mx-auto px-4 flex justify-between font-bold gap-6 py-2 text-sm text-gray-700">
+        <nav className="border-t border-gray-100 pt-[40px] md:block hidden">
+          <div className="flex justify-between font-bold gap-6 py-2 text-sm text-gray-700">
             <div className="cursor-pointer">Продукты</div>
             <div className="cursor-pointer">Еда быстрого приготовления</div>
             <div className="cursor-pointer">Консервы</div>
